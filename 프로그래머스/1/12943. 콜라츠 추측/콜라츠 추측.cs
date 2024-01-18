@@ -1,12 +1,10 @@
 public class Solution {
-    public long solution(long num) {
-        long answer = 0;
+    public int solution(int num) {
         long x = num;
-        while (answer <= 500)
+        for (int i = 0; i <= 500; i++)
         {
             if (x == 1)
-                return answer;
-            answer++;
+                return i;
             x = (x % 2 == 0) ? x / 2 : x * 3 + 1;
         }
         return -1;
