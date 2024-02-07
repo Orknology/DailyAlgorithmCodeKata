@@ -16,7 +16,7 @@ public class Solution {
             //이중 for문
             for (int j = 0; j < arr[i].Length; j++)
             {
-                //0은 
+                //0은 자동 대문자
                 if ( j == 0 )
                 {
                     answer += Char.ToUpper(arr[i][j]);
